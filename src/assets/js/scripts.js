@@ -10,6 +10,8 @@ import * as bootstrap from 'bootstrap'
 // Import jQuery
 import * as $ from 'jquery'
 
+import "./icons/icon-arrow-right";
+
 $(document).ready(function () {
   console.log('Welcome');
 })

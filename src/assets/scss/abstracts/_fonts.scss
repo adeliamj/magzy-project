@@ -1,20 +1,22 @@
-@include font-face('Open Sauce Sans', 'OpenSauceSans-Black', 900);
-@include font-face('Open Sauce Sans', 'OpenSauceSans-BlackItalic', 900, italic);
+@include font-face('Thunder', 'Thunder-BlackHC', 900);
+@include font-face('Thunder', 'Thunder-BlackHCItalic', 900, italic);
+@include font-face('Thunder', 'Thunder-BlackLC', 900);
+@include font-face('Thunder', 'Thunder-BlackLCItalic', 900, italic);
 
-@include font-face('Open Sauce Sans', 'OpenSauceSans-ExtraBold', 800);
-@include font-face('Open Sauce Sans', 'OpenSauceSans-ExtraBoldItalic', 800, italic);
+@include font-face('Thunder', 'Thunder-ExtraBoldHC', 800);
+@include font-face('Thunder', 'Thunder-ExtraBoldHCItalic', 800, italic);
 
-@include font-face('Open Sauce Sans', 'OpenSauceSans-Bold', 700);
-@include font-face('Open Sauce Sans', 'OpenSauceSans-BoldItalic', 700, italic);
+@include font-face('Thunder', 'Thunder-BoldHC', 700);
+@include font-face('Thunder', 'Thunder-BoldHCItalic', 700, italic);
 
-@include font-face('Open Sauce Sans', 'OpenSauceSans-SemiBold', 600);
-@include font-face('Open Sauce Sans', 'OpenSauceSans-SemiBoldItalic', 600, italic);
+@include font-face('Thunder', 'Thunder-SemiBold', 600);
+@include font-face('Thunder', 'Thunder-SemiBoldHCItalic', 600, italic);
 
-@include font-face('Open Sauce Sans', 'OpenSauceSans-Medium', 500);
-@include font-face('Open Sauce Sans', 'OpenSauceSans-MediumItalic', 500, italic);
+@include font-face('Thunder', 'Thunder-MediumHC', 500);
+@include font-face('Thunder', 'Thunder-MediumHCItalic', 500, italic);
 
-@include font-face('Open Sauce Sans', 'OpenSauceSans-Regular');
-@include font-face('Open Sauce Sans', 'OpenSauceSans-Italic', 400, italic);
+@include font-face('Thunder', 'Thunder-HC');
+@include font-face('Thunder', 'Thunder-LCItalic', 400, italic);
 
-@include font-face('Open Sauce Sans', 'OpenSauceSans-Light', 300);
-@include font-face('Open Sauce Sans', 'OpenSauceSans-LightItalic', 300, italic);
+@include font-face('Thunder', 'Thunder-LightHC', 300);
+@include font-face('Thunder', 'Thunder-LightHCItalic', 300, italic);
