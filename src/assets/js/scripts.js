@@ -11,6 +11,8 @@ import * as bootstrap from 'bootstrap'
 import * as $ from 'jquery'
 
 import "./icons/icon-arrow-right";
+import "./icons/icon-cart";
+import "./pages/event";
 
 $(document).ready(function () {
   console.log('Welcome');

@@ -1,0 +1,34 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    border-bottom: .01rem solid $color-background-dark;
+
+    align-items: center;
+
+    &__title{
+        margin-bottom: -2.7rem;
+        font-family: $font-family-display;
+        font-size: 13rem;
+        text-transform: uppercase;
+        color: $color-text-dark;
+        display: flex;
+
+        &--all{
+            font-weight: 180;
+            padding-right: 1rem;
+        }
+
+        &--event{
+            font-weight: 176;
+        }
+    }
+
+    &__content{
+        height: 100%;
+        // padding-top: 7%;
+        text-transform: uppercase;
+        font-family: $font-family-base;
+        font-size: 1.7rem;
+    }
+}

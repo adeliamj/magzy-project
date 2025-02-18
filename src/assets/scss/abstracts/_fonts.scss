@@ -1,22 +1,49 @@
+@include font-face('Thunder', 'Thunder-HC', 400);
+@include font-face('Thunder', 'Thunder-LC', 180);
+@include font-face('Thunder', 'Thunder-HC', 176);
+
 @include font-face('Thunder', 'Thunder-BlackHC', 900);
 @include font-face('Thunder', 'Thunder-BlackHCItalic', 900, italic);
 @include font-face('Thunder', 'Thunder-BlackLC', 900);
 @include font-face('Thunder', 'Thunder-BlackLCItalic', 900, italic);
 
-@include font-face('Thunder', 'Thunder-ExtraBoldHC', 800);
-@include font-face('Thunder', 'Thunder-ExtraBoldHCItalic', 800, italic);
-
 @include font-face('Thunder', 'Thunder-BoldHC', 700);
 @include font-face('Thunder', 'Thunder-BoldHCItalic', 700, italic);
+@include font-face('Thunder', 'Thunder-BoldLC', 700);
+@include font-face('Thunder', 'Thunder-BoldLCItalic', 700, italic);
 
-@include font-face('Thunder', 'Thunder-SemiBold', 600);
-@include font-face('Thunder', 'Thunder-SemiBoldHCItalic', 600, italic);
+@include font-face('Thunder', 'Thunder-ExtraBoldHC', 800);
+@include font-face('Thunder', 'Thunder-ExtraBoldHCItalic', 800, italic);
+@include font-face('Thunder', 'Thunder-ExtraBoldLC', 800);
+@include font-face('Thunder', 'Thunder-ExtraBoldLCItalic', 800, italic);
 
-@include font-face('Thunder', 'Thunder-MediumHC', 500);
-@include font-face('Thunder', 'Thunder-MediumHCItalic', 500, italic);
+@include font-face('Thunder', 'Thunder-ExtraLightHC', 200);
+@include font-face('Thunder', 'Thunder-ExtraLightHCItalic', 200, italic);
+@include font-face('Thunder', 'Thunder-ExtraLightLC', 200);
+@include font-face('Thunder', 'Thunder-ExtraLightLCItalic', 200, italic);
 
-@include font-face('Thunder', 'Thunder-HC');
-@include font-face('Thunder', 'Thunder-LCItalic', 400, italic);
+
+@include font-face('Thunder', 'Thunder-HCItalic', 400, italic);
+@include font-face('Thunder', 'Thunder-LC', 180);
+@include font-face('Thunder', 'Thunder-LCItalic', 450, italic);
+
 
 @include font-face('Thunder', 'Thunder-LightHC', 300);
 @include font-face('Thunder', 'Thunder-LightHCItalic', 300, italic);
+@include font-face('Thunder', 'Thunder-LightLC', 300);
+@include font-face('Thunder', 'Thunder-LightLCItalic', 300, italic);
+
+@include font-face('Thunder', 'Thunder-MediumHC', 450);
+@include font-face('Thunder', 'Thunder-MediumHCItalic', 450, italic);
+@include font-face('Thunder', 'Thunder-MediumLC', 460);
+@include font-face('Thunder', 'Thunder-MediumLCItalic', 460, italic);
+
+@include font-face('Thunder', 'Thunder-SemiBoldHC', 600);
+@include font-face('Thunder', 'Thunder-SemiBoldHCItalic', 600, italic);
+@include font-face('Thunder', 'Thunder-SemiBoldLC', 600);
+@include font-face('Thunder', 'Thunder-SemiBoldHCItalic', 600, italic);
+
+@include font-face('Thunder', 'Thunder-ThinHC', 300);
+@include font-face('Thunder', 'Thunder-ThinHCItalic', 300, italic);
+@include font-face('Thunder', 'Thunder-ThinLC', 300);
+@include font-face('Thunder', 'Thunder-ThinLCItalic', 300, italic);
