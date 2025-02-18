@@ -12,6 +12,7 @@ import * as $ from 'jquery'
 
 import "./icons/icon-arrow-right";
 import "./icons/icon-cart";
+import "./icons/icon-search";
 import "./pages/event";
 
 $(document).ready(function () {
