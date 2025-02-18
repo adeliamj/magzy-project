@@ -1,23 +1,23 @@
 // ARRROW RIGHT
 document.addEventListener("DOMContentLoaded", function () {
     const leftMenuItems = document.querySelectorAll(".nav__menu--left");
-    const iconRight = document.querySelector(".nav__menu--icon-right");
+    const iconDown = document.querySelector(".nav__menu--icon-down");
 
-    console.log(iconRight); 
+    console.log(iconDown); 
 
-    if (leftMenuItems.length > 0 && iconRight) {
+    if (leftMenuItems.length > 0 && iconDown) {
         const lastChild = leftMenuItems[leftMenuItems.length - 1];
 
         // Event untuk hover
         lastChild.addEventListener("mouseenter", function () {
             if (lastChild.classList.contains("active") || !lastChild.classList.contains("active")) {
-                iconRight.classList.add("active-hover");
+                iconDown.classList.add("active-hover");
             }
         });
 
         lastChild.addEventListener("mouseleave", function () {
             if (!lastChild.classList.contains("active")) {
-                iconRight.classList.remove("active-hover");
+                iconDown.classList.remove("active-hover");
             }
         });
 
@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
             lastChild.classList.toggle("active");
 
             if (lastChild.classList.contains("active")) {
-                iconRight.classList.add("active-hover");
+                iconDown.classList.add("active-hover");
             } else {
-                iconRight.classList.remove("active-hover");
+                iconDown.classList.remove("active-hover");
             }
         });
     }

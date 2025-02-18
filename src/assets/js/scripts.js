@@ -11,8 +11,13 @@ import * as bootstrap from 'bootstrap'
 import * as $ from 'jquery'
 
 import "./icons/icon-arrow-right";
+import "./icons/icon-arrow-down";
 import "./icons/icon-cart";
 import "./icons/icon-search";
+import "./icons/icon-carousel";
+import "./icons/icon-slider";
+import "./icons/icon-location";
+import "./icons/icon-arrow-right-top";
 import "./pages/event";
 
 $(document).ready(function () {
