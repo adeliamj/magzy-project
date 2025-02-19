@@ -1,0 +1,88 @@
+.subscribe {
+    margin-left: 2rem;
+    align-items: center;
+    margin-right: -2rem;
+    margin-top: 3.5rem;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        &--title {
+            width: 40%;
+            padding-top: 6%;
+            text-transform: uppercase;
+            font-family: $font-family-display;
+            font-weight: 390;
+            font-size: 15rem;
+            line-height: 13.2rem;
+            letter-spacing: 1%;
+        }
+
+        &--form {
+            padding-top: 27%;
+            display: flex;
+            margin-left: -15rem;
+            font-size: 1.5rem;
+            line-height: 3.12rem;
+            letter-spacing: 0%;
+
+            &-email {
+                height: 3.8rem;
+                width: 28.5rem;
+                color: $color-gray;
+                background: none;
+                outline: none;
+                border: none;
+                border-bottom: .01rem solid $color-background-dark;
+                border-top: .01rem solid $color-background-dark;
+            }
+        }
+
+        &--image {
+            z-index: 2;
+            justify-content: end;
+            align-items: end;
+            overflow: hidden;
+        }
+    }
+
+    &__brand {
+        border-top: .01rem solid $color-background-dark;
+        border-bottom: .01rem solid $color-background-dark;
+        width: 70%;
+        display: flex;
+        margin-top: -10.9rem;
+        margin-left: -2rem;
+
+        &--logo {
+            margin-left: 2rem;
+            display: flex;
+            font-family: $font-family-display;
+            font-weight: 400;
+            font-size: 8.5rem;
+            color: $color-brand-primary;
+            margin-bottom: -2rem;
+        }
+
+        &--text {
+            width: 45%;
+            padding-left: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: -2rem;
+        }
+    }
+
+}
+
+.btn-subscribe {
+    height: 3.8rem;
+    width: 10rem;
+    color: $color-text-white;
+    font-weight: 500;
+    background-color: $color-brand-primary;
+    outline: none;
+    border: none;
+}
