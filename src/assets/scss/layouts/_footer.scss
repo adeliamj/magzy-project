@@ -1,0 +1,37 @@
+.footer{
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+    border-bottom: .01rem solid $color-background-dark;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+    &__left{
+        margin-left: 4rem;
+        display: flex;
+
+        &--title{
+            font-family: $font-family-display;
+            font-weight: 390;
+            font-size: 2rem;
+        }
+        &--content{
+            list-style: none;
+            font-size: 1rem;
+            line-height: 1.8rem;
+            letter-spacing: 2%;
+        }
+    }
+
+    &__center{
+        display: flex;
+    }
+
+    &__right{
+        display: flex;
+        margin-right: 4rem;
+    }
+}
