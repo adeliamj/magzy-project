@@ -1,21 +1,31 @@
+// icon-slider.js
 class IconSlider extends HTMLElement {
     constructor() {
         super();
     }
 
     connectedCallback() {
+        // diset jumlah total images agar diawal rect active tidak kosong
+        this.totalImages = 2;
+        this.currentIndex = 0;
         this.render();
+        this.updateIndex(this.currentIndex, this.totalImages);
     }
 
     render() {
-        this.outerHTML = `
-     <svg width="428" height="3" viewBox="0 0 428 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="428" height="3" fill="#8B8B8B"/>
-        <rect width="100" height="3" fill="#E36B45"/>
-    </svg>
-
-  
+        this.innerHTML = `
+            <svg width="428" height="3" viewBox="0 0 428 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="428" height="3" fill="#8B8B8B"/>
+                <rect width="0%" height="3" fill="#E36B45" class="active"/>
+            </svg>
         `;
     }
+
+    // memperbarui lebar progres slider berdasarkan indeks yang aktif
+    updateIndex(newIndex, totalImages) {
+        const width = ((newIndex + 1) / totalImages) * 100;
+        this.querySelector('rect.active').setAttribute('width', `${width}%`);
+    }
 }
+
 customElements.define("icon-slider", IconSlider);
