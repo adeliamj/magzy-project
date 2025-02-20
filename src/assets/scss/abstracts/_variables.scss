@@ -19,95 +19,32 @@ $color-icon-light: #EAEAEA;
 // scss-docs-end icon-color-variables
 
 // // scss-docs-start brand-color-variables
-// $sky-blue-crayola: #4CD6E9;
-// $baby-blue-light: #EDFDFF;
-// $ultramarine-blue: #706DF8;
-// $ultramine-blue-pale: #E9E9FF;
-// $ultramarine-blue-light: #F4F3FF;
 // // scss-docs-end brand-color-variables
 
 // // scss-docs-start black-color-variables
-// $white: #FFFFFF;
-// $black-10: #E8EDF4;
-// $black-20: #C0CBDC;
-// $black-40: #8A9BB5;
-// $black-60: #697383;
-// $black-80: #37455A;
-// $black: #051631; // black-100
 // // scss-docs-end black-color-variables
 
 // // scss-docs-start accent-color-variables
-// $blue: #26A4FF;
-// $blue-pale: #BEE4FF;
-// $yellow: #FFB836;
-// $yellow-pale: #FFE4B1;
-// $green: #56CDAD;
-// $green-pale: #CCF0E6;
-// $red: #FF6550;
-// $red-pale: #FFD1CB;
 // // scss-docs-end accent-color-variables
 
 // // scss-docs-start theme-color-variables
-// $primary: $ultramarine-blue;
-// $secondary: $sky-blue-crayola;
-// $success: $green;
-// $info: $blue;
-// $warning: $yellow;
-// $danger: $red;
-// $light: $black-10;
-// $dark: $black-80;
 // // scss-docs-end theme-color-variables
 
 // // scss-docs-start shadow-color-variables
-// $shadow-color: rgba(159, 165, 174, 0.08);
-// $shadow-hover-color: rgba(0, 0, 0, 0.08);
-// $shadow-featured-hover-color: rgba(112, 109, 248, 0.1);
-// $shadow-blue-hover-color: rgba(112, 109, 248, 0.08);
 // // scss-docs-end shadow-color-variables
 
 
 // // Our custom color
-// $custom-colors: (
-//   'sky-blue-crayola':$sky-blue-crayola,
-//   'baby-blue-light':$baby-blue-light,
-//   'ultramarine-blue':$ultramarine-blue,
-//   'ultramine-blue-pale':$ultramine-blue-pale,
-//   'ultramarine-blue-light':$ultramarine-blue-light,
-//   'white':$white,
-//   'black-10':$black-10,
-//   'black-20':$black-20,
-//   'black-40':$black-40,
-//   'black-60':$black-60,
-//   'black-80':$black-80,
-//   'black':$black,
-//   'blue':$blue,
-//   'blue-pale':$blue-pale,
-//   'yellow':$yellow,
-//   'yellow-pale':$yellow-pale,
-//   'green':$green,
-//   'green-pale':$green-pale,
-//   'red':$red,
-//   'red-pale':$red-pale
+
 // );
 
 // $theme-colors: (
-//   "primary": $primary,
-//   "secondary": $secondary,
-//   "success": $success,
-//   "info": $info,
-//   "warning": $warning,
-//   "danger": $danger,
-//   "light": $light,
-//   "dark": $dark
 // );
 
 // $theme-colors: map-merge($theme-colors, $custom-colors);
 
 
 // // Minimum contrast
-// //
-// // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
-// // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
 // $min-contrast-ratio: 1.5;
 
 
@@ -146,14 +83,12 @@ $container-max-widths: (
 
 // Container padding
 
-$container-padding-x: toRem(40);
+// $container-padding-x: toRem(40);
 
 
 // // Body
 
 // scss-docs-start body-elements
-// $body-bg: #FBFEFF;
-// $body-color: $black-80;
 // scss-docs-end body-elements
 
 
@@ -178,7 +113,9 @@ $container-padding-x: toRem(40);
 // // Define common padding and border radius sizes and more.
 
 // // scss-docs-start border-variables
-// $border-color: $black-20;
+$border-color-light: .1rem solid $color-gray;
+$border-color-dark: .01rem solid $color-background-dark;
+$border-color-dark-thick:.3rem solid $color-background-dark;
 // $border-color-translucent: rgba($black, .175);
 // // scss-docs-end border-variables
 

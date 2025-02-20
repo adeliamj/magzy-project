@@ -1,0 +1,36 @@
+.menu {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-bottom: -7rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    border-bottom: $border-color-dark;
+
+    &__all {
+        margin-left: 2rem;
+        list-style: none;
+        margin-right: 2rem;
+
+        font-size: 1rem;
+        line-height: 1.8rem;
+        letter-spacing: 2%;
+
+        &-1:hover, &-1:active, .active{
+            color: $color-brand-primary;
+        }
+        
+    }
+}
+
+.menu--active {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 0rem;
+}

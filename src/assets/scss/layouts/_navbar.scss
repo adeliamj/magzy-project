@@ -8,7 +8,7 @@
 
 .nav {
     text-transform: uppercase;
-    border-bottom: .01rem solid $color-background-dark;
+    border-bottom: $border-color-dark;
     display: flex;
     justify-content: space-between;
     background-color: $color-background;
@@ -48,6 +48,8 @@
                 font-family: $font-family-display;
                 color: $color-brand-primary;
                 font-size: 2rem;
+                line-height: 3.8rem;
+                letter-spacing: 6%;
                 font-weight: bold;
                 padding-top: .3rem;
                 padding-right: 2rem;

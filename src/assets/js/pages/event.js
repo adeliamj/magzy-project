@@ -143,3 +143,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    // mengambil elemen kelas menu
+    const menu = document.querySelector(".menu");
+    // mengambil elemen dengan id #all-menu
+    const menuButton = document.querySelector("#all-menu");
+
+    // memastikan menubutton dan menu ada di elemen
+    if (menuButton && menu) {
+        // menambahkan event listener untuk klik pada tombol menu 
+        menuButton.addEventListener("click", (event) => {
+            // mencegah aksi default dari elemen
+            event.preventDefault(); 
+
+            // toggle menjalankan kelas menu--active
+            menu.classList.toggle("menu--active");
+        });
+    }
+});
+
+
+
+

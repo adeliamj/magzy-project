@@ -3,7 +3,7 @@
     margin-right: -2rem;
     margin-top: 2rem;
     padding-bottom: 3rem;
-    border-bottom: .01rem solid $color-background-dark;
+    border-bottom: $border-color-dark;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -17,6 +17,8 @@
             font-family: $font-family-display;
             font-weight: 390;
             font-size: 2rem;
+            line-height: 3.8rem;
+            letter-spacing: 6%;
         }
         &--content{
             list-style: none;

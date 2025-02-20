@@ -24,7 +24,7 @@
             display: flex;
             margin-left: -15rem;
             font-size: 1.5rem;
-            line-height: 3.12rem;
+            line-height: 3.2rem;
             letter-spacing: 0%;
 
             &-email {
@@ -34,8 +34,8 @@
                 background: none;
                 outline: none;
                 border: none;
-                border-bottom: .01rem solid $color-background-dark;
-                border-top: .01rem solid $color-background-dark;
+                border-bottom: $border-color-dark;
+                border-top: $border-color-dark;
             }
         }
 
@@ -48,8 +48,8 @@
     }
 
     &__brand {
-        border-top: .01rem solid $color-background-dark;
-        border-bottom: .01rem solid $color-background-dark;
+        border-top: $border-color-dark;
+        border-bottom: $border-color-dark;
         width: 70%;
         display: flex;
         margin-top: -10.9rem;
@@ -61,17 +61,21 @@
             font-family: $font-family-display;
             font-weight: 400;
             font-size: 8.5rem;
+            line-height: 11rem;
+            letter-spacing: -1%;
             color: $color-brand-primary;
             margin-bottom: -2rem;
         }
 
         &--text {
+            padding-top: 1%;
             width: 45%;
             padding-left: 10rem;
             display: flex;
-            justify-content: center;
-            align-items: center;
             margin-bottom: -2rem;
+            font-size: 1rem;
+            line-height: 1.8rem;
+            letter-spacing: 2%;
         }
     }
 
