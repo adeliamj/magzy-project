@@ -6,6 +6,10 @@
     border-bottom: $border-color-dark;
     color: $color-gray;
 
+    @include respond(sm) {
+        margin-right: 2rem;
+    }
+
     &__icon{
         padding-top: .66rem;
         width: 3.2rem;
@@ -17,9 +21,12 @@
         outline: none;
         margin-left: -1.2rem;
         text-transform: uppercase;
-        font-family: $font-family-base;
-        font-size: 2.25rem;
-        line-height: 4.6rem;
+        font-size: $font-size-h4;
+        line-height: $input-line-height-h4;
         letter-spacing: 2%;
+
+        @include respond(sm) {
+            margin-left: .5rem;
+        }
     }
 }

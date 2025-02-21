@@ -1,37 +1,67 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     margin: 2rem 0 0 2rem;
     border-bottom: $border-color-dark;
     align-items: center;
 
-    &__title{
+    @include respond(sm) {
+        margin-right: 2rem;
+        display: inline-block;
+    }
+
+    @include respond(lg) {
+        margin-right: 2rem;
+        display: inline-block;
+    }
+
+    &__title {
         font-family: $font-family-display;
-        font-size: 13rem;
-        line-height: 15rem;
+        font-size: $font-size-tb2;
+        line-height: $input-line-height-tb2;
         letter-spacing: 0%;
         text-transform: uppercase;
-        color: $color-text-dark;
         display: flex;
 
-
-        &--all{
-            font-weight: 180;
-            padding-right: 1rem;
+        @include respond(sm) {
+            display: inline-block;
         }
 
-        &--event{
-            font-weight: 176;
+        &--all {
+            font-weight: $font-weight-extralight;
+            padding-right: 1rem;
+
+            @include respond(sm) {
+                line-height: $input-line-height-h1;
+                padding-right: 0rem;
+            }
+        }
+
+        &--event {
+            font-weight: $font-weight-thin;
         }
     }
 
-    &__content{
+    &__content {
         height: 100%;
         text-transform: uppercase;
-        font-family: $font-family-base;
-        font-size: 2.25rem;
-        line-height: 4.6rem;
+        font-size: $font-size-h4;
+        line-height: $input-line-height-h4;
         letter-spacing: 2%;
-        font-weight: 500;
+        font-weight: $font-weight-medium;
+
+
+        @include respond(sm) {
+            padding-bottom: 3rem;
+            text-transform: none;
+            padding-top: 1rem;
+            line-height: $input-line-height-xl;
+            padding-right: 0rem;
+        }
+
+        @include respond(lg) {
+            margin-top: -3rem;
+            padding-bottom: 2rem;
+        }
     }
 }

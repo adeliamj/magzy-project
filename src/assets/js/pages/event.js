@@ -155,13 +155,18 @@ document.addEventListener("DOMContentLoaded", () => {
         // menambahkan event listener untuk klik pada tombol menu 
         menuButton.addEventListener("click", (event) => {
             // mencegah aksi default dari elemen
-            event.preventDefault(); 
+            event.preventDefault();
 
             // toggle menjalankan kelas menu--active
             menu.classList.toggle("menu--active");
         });
     }
 });
+
+
+
+
+
 
 
 

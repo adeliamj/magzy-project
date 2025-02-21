@@ -1,4 +1,4 @@
-.footer{
+.footer {
     margin-left: -2rem;
     margin-right: -2rem;
     margin-top: 2rem;
@@ -9,31 +9,83 @@
     justify-content: space-between;
     text-transform: uppercase;
 
-    &__left{
+    @include respond(sm) {
+        font-size: $font-size-lg;
+        line-height: $input-line-height-lg;
+        letter-spacing: 2%;
+        display: block;
+    }
+
+    &__left {
         margin-left: 4rem;
         display: flex;
 
-        &--title{
-            font-family: $font-family-display;
-            font-weight: 390;
-            font-size: 2rem;
-            line-height: 3.8rem;
-            letter-spacing: 6%;
+        @include respond(sm) {
+            display: flex;
         }
-        &--content{
+
+        &--title {
+            font-family: $font-family-display;
+            font-weight: $font-weight-light;
+            font-size: $font-size-2xl;
+            line-height: $input-line-height-2xl;
+            letter-spacing: 6%;
+
+            @include respond(sm) {
+            width: 6rem;
+        }
+        }
+
+        &--content {
+
+            &-menu {
+                display: flex;
+                flex-direction: row;
+
+                @include respond(sm) {
+
+                    width: 10rem;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            &-1 {
+
+                @include respond(sm) {
+                    padding-bottom: 1rem;
+                }
+
+            }
+
             list-style: none;
-            font-size: 1rem;
-            line-height: 1.8rem;
+            line-height: $input-line-height-sm;
             letter-spacing: 2%;
         }
     }
 
-    &__center{
+    &__center {
         display: flex;
+
+        @include respond(sm) {
+            margin-left: 4rem;
+            margin-right: 0rem;
+            display: flex;
+        }
+
+        &--content{
+            text-transform: none;
+        }
     }
 
-    &__right{
+    &__right {
         display: flex;
         margin-right: 2rem;
+
+        @include respond(sm) {
+            margin-left: 4rem;
+            margin-right: 0rem;
+            display: flex;
+        }
     }
 }

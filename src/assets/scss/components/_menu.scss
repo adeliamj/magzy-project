@@ -11,15 +11,20 @@
     justify-content: space-between;
     text-transform: uppercase;
     border-bottom: $border-color-dark;
+    overflow: hidden;
+
+    @include respond(sm) {
+        margin-right: 0rem;
+    }
 
     &__all {
         margin-left: 2rem;
         list-style: none;
         margin-right: 2rem;
 
-        font-size: 1rem;
-        line-height: 1.8rem;
-        letter-spacing: 2%;
+        // font-size: $font-size-base;
+        // line-height: $input-line-height-sm;
+        // letter-spacing: 2%;
 
         &-1:hover, &-1:active, .active{
             color: $color-brand-primary;
@@ -33,4 +38,9 @@
     visibility: visible;
     opacity: 1;
     margin-bottom: 0rem;
+    overflow: hidden;
+
+    @include respond(sm) {
+        display: inline-block;
+    }
 }

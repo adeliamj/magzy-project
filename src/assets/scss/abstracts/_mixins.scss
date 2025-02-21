@@ -13,38 +13,49 @@
   }
 }
 
-// Keyframe animations with prefixes
-// So you don't need to add multeple keyframes manually
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-    @content;
-  }
 
-  @-moz-keyframes #{$name} {
-    @content;
-  }
+@mixin respond($breakpoint) {
+  $max-width-value: map-get($container-max-widths, $breakpoint);
 
-  @keyframes #{$name} {
-    @content;
+  @if $max-width-value {
+    @media only screen and (max-width: $max-width-value) {
+      @content;
+    }
   }
 }
+
+// Keyframe animations with prefixes
+// So you don't need to add multeple keyframes manually
+// @mixin keyframes($name) {
+//   @-webkit-keyframes #{$name} {
+//     @content;
+//   }
+
+//   @-moz-keyframes #{$name} {
+//     @content;
+//   }
+
+//   @keyframes #{$name} {
+//     @content;
+//   }
+// }
 
 // Text shortener
 // It performs truncation on any text that overflows its containing element and adds an ellipsis (…) to the end
-@mixin text-shorten($line: 1) {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: $line;
-}
+// @mixin text-shorten($line: 1) {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   display: -webkit-box;
+//   -webkit-box-orient: vertical;
+//   -webkit-line-clamp: $line;
+// }
 
-@mixin heading-size($font-size, $mobile-font-size, $line-height, $mobile-line-height) {
-  font-size: $font-size;
-  line-height: $line-height;
+// @mixin heading-size($font-size, $mobile-font-size, $input-line-height, $mobile-line-height) {
+//   font-size: $font-size;
+//   line-height: $input-line-height;
 
-  @include media-breakpoint-down(sm) {
-    font-size: $mobile-font-size;
-    line-height: $mobile-line-height;
-  }
-}
+//   @include media-breakpoint-down(sm) {
+//     font-size: $mobile-font-size;
+//     line-height: $mobile-line-height;
+//   }
+// }
