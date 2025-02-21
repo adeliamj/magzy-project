@@ -5,7 +5,7 @@
 
     @include respond(sm) {
         margin-bottom: 0rem;
-        margin-right: 2rem;
+        margin-right: 1rem;
     }
 
     &__title {
@@ -121,7 +121,7 @@
 
             order: -1;
             width: 10%;
-            margin-right: 2rem;
+            margin-right: 1rem;
 
             @include respond(sm) {
                 order: 0;

@@ -1,6 +1,6 @@
 .footer {
     margin-left: -2rem;
-    margin-right: -2rem;
+    margin-right: -1rem;
     margin-top: 2rem;
     padding-bottom: 3rem;
     border-bottom: $border-color-dark;
@@ -87,7 +87,7 @@
 
     &__right {
         display: flex;
-        margin-right: 2rem;
+        margin-right: 1rem;
 
         @include respond(sm) {
             margin-right: 4rem;

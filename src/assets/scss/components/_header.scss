@@ -6,12 +6,12 @@
     align-items: center;
 
     @include respond(sm) {
-        margin-right: 2rem;
+        margin-right: 1rem;
         display: inline-block;
     }
 
     @include respond(lg) {
-        margin-right: 2rem;
+        margin-right: 1rem;
         display: inline-block;
     }
 

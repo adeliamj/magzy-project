@@ -4,7 +4,7 @@
     opacity: 0;
 
     margin-left: -2rem;
-    margin-right: -2rem;
+    margin-right: -1rem;
     margin-bottom: -7rem;
     padding-top: 1rem;
     display: flex;
@@ -16,17 +16,17 @@
     @include respond(sm) {
         display: flex;
         margin-left: 0rem;
-        margin-right: -2rem;
+        margin-right: -1rem;
         overflow: hidden;
     }
 
     &__all {
         margin-left: 2rem;
         list-style: none;
-        margin-right: 2rem;
+        margin-right: 1rem;
 
         @include respond(sm) {
-            margin-right: 2rem;
+            margin-right: 1rem;
             margin-left: 0rem;
             overflow: hidden;
         }
