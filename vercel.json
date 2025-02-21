@@ -1,9 +1,17 @@
 {
-    "builds": [
-      {
-        "src": "webpack.config.js",
-        "use": "@vercel/node"
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "buildCommand": "npm run build"
       }
-    ]
-  }
-  
+    }
+  ],
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    }
+  ]
+}
