@@ -24,6 +24,7 @@
         display: flex;
 
         @include respond(sm) {
+            font-size: $font-size-tb3;
             display: inline-block;
         }
 
