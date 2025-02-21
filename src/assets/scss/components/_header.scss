@@ -33,13 +33,17 @@
             padding-right: 1rem;
 
             @include respond(sm) {
-                line-height: $input-line-height-h1;
+                line-height: $input-line-height-h3;
                 padding-right: 0rem;
             }
         }
 
         &--event {
             font-weight: $font-weight-thin;
+            @include respond(sm) {
+                line-height: $input-line-height-h1;
+                padding-right: 0rem;
+            }
         }
     }
 
@@ -53,10 +57,11 @@
 
 
         @include respond(sm) {
+            font-size: $font-size-lg;
             padding-bottom: 3rem;
             text-transform: none;
             padding-top: 1rem;
-            line-height: $input-line-height-xl;
+            line-height: $input-line-height-base;
             padding-right: 0rem;
         }
 

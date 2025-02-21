@@ -26,8 +26,8 @@
         letter-spacing: 2%;
 
         @include respond(sm) {
-            font-size: $font-size-2xl;
-            margin-left: .5rem;
+            font-size: $font-size-xl;
+            margin-left: .2rem;
         }
     }
 }

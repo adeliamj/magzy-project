@@ -28,6 +28,12 @@
             justify-content: center;
             align-items: center;
 
+            @include respond(sm) {
+                font-size: $font-size-lg;
+                width: 50%;
+                height: 60%;
+            }
+
         }
     }
 
@@ -50,7 +56,7 @@
 
             @include respond(sm) {
                 order: 0;
-                width: 80%;
+                width: 100%;
             }
 
             &-hiden {
@@ -166,7 +172,7 @@
                     padding-right: .5rem;
 
                     @include respond(sm) {
-                        width: 100%;
+                        width: 85%;
                     }
                 }
 
@@ -180,7 +186,7 @@
 
                     @include respond(sm) {
                         margin-right: -87%;
-                        width: 100%;
+                        width: 85%;
                     }
                 }
 
@@ -324,15 +330,21 @@
 
 .icon {
     &__carousel {
+        padding-top: 7.5rem;
         align-content: center;
         justify-content: center;
         color: $color-text-white;
-        width: 3.2rem;
+        width: 32px;
+        height: 32px;
         z-index: 100;
+
+        @include respond(sm) {
+            width: 80%;
+        }
 
         &--right {
             transform: scaleX(-1);
-            margin-left: -1rem;
+            margin-left: 0rem;
 
             @include respond(sm) {
                 margin-left: 0rem;
