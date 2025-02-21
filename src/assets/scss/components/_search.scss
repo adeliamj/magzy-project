@@ -3,6 +3,7 @@
     align-items: center;
     margin-left: 2rem;
     margin-bottom: 2.5rem;
+    border-top: $border-color-dark;
     border-bottom: $border-color-dark;
     color: $color-gray;
 
@@ -27,7 +28,6 @@
 
         @include respond(sm) {
             font-size: $font-size-xl;
-            margin-left: .2rem;
         }
     }
 }

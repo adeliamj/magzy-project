@@ -2,7 +2,7 @@
     display: none;
     visibility: hidden;
     opacity: 0;
-    
+
     margin-left: -2rem;
     margin-right: -2rem;
     margin-bottom: -7rem;
@@ -14,7 +14,10 @@
     overflow: hidden;
 
     @include respond(sm) {
-        margin-right: 0rem;
+        display: flex;
+        margin-left: 0rem;
+        margin-right: -2rem;
+        overflow: hidden;
     }
 
     &__all {
@@ -22,14 +25,18 @@
         list-style: none;
         margin-right: 2rem;
 
-        // font-size: $font-size-base;
-        // line-height: $input-line-height-sm;
-        // letter-spacing: 2%;
+        @include respond(sm) {
+            margin-right: 2rem;
+            margin-left: 0rem;
+            overflow: hidden;
+        }
 
-        &-1:hover, &-1:active, .active{
+        &-1:hover,
+        &-1:active,
+        .active {
             color: $color-brand-primary;
         }
-        
+
     }
 }
 
@@ -42,5 +49,7 @@
 
     @include respond(sm) {
         display: inline-block;
+        width: 100%;
+        overflow: hidden;
     }
 }

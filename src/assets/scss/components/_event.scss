@@ -55,6 +55,7 @@
             width: 10%;
 
             @include respond(sm) {
+                padding-top: 1rem;
                 order: 0;
                 width: 100%;
             }
@@ -84,6 +85,7 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
 
+
                 }
 
                 &-location {
@@ -93,12 +95,11 @@
                     line-height: $input-line-height-lg;
                     letter-spacing: 2%;
 
-                    .icon__location--hiden
-                    {
+                    .icon__location--hiden {
                         margin-top: -1rem;
                     }
 
-                    .location__text--hiden{
+                    .location__text--hiden {
                         margin-top: -.8rem;
                         margin-left: .5rem;
                         display: -webkit-box;
@@ -304,8 +305,9 @@
                     letter-spacing: 2%;
 
                     @include respond(sm) {
+                        padding-right: .5rem;
+                        padding-left: .5rem;
                         margin-top: 1rem;
-                        margin-right: 0rem;
                     }
                 }
             }
@@ -356,9 +358,11 @@
 
     &__slider {
         width: 428px;
+        height: 3px;
 
         @include respond(sm) {
-            width: 80%
+            width: 98%;
+            height: 3px;
         }
     }
 }

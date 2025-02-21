@@ -6,4 +6,8 @@
     background-color: $color-brand-primary;
     outline: none;
     border: none;
+
+    @include respond(sm) {
+        margin-left: -25%;
+    }
 }

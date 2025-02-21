@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin: 2rem 0 0 2rem;
-    border-bottom: $border-color-dark;
+    // border-bottom: $border-color-dark;
     align-items: center;
 
     @include respond(sm) {
@@ -30,7 +30,7 @@
 
         &--all {
             font-weight: $font-weight-extralight;
-            padding-right: 1rem;
+            padding-right: 0rem;
 
             @include respond(sm) {
                 line-height: $input-line-height-h3;

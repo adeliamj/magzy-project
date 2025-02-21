@@ -8,7 +8,7 @@
     margin-right: -2rem;
 
     @include respond(sm) {
-        margin-right: 2rem;
+     margin-right: -1rem;
     }
 
     &__menu {
@@ -48,6 +48,7 @@
             // line-height: $input-line-height-sm;
             // letter-spacing: 2%;
 
+            padding-right: 2rem;
             padding-left: .6rem;
 
             &-subs {
@@ -58,7 +59,6 @@
                 letter-spacing: 6%;
                 font-weight: bold;
                 padding-top: .6rem;
-                padding-right: 2rem;
                 margin-bottom: 0;
             }
         }
