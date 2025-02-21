@@ -1,10 +1,3 @@
-/**
- * We use webpack as our main module bundler.
- * You can easily modify, add or improve the configurations as needed.
- * For more information, read the docs here: https://webpack.js.org/
- */
-
-// Import only necessary packages
 const webpack = require('webpack');
 const path = require('path');
 const glob = require('glob');
