@@ -8,7 +8,7 @@
     text-transform: uppercase;
 
     @include respond(sm) {
-        margin-left: 1rem;
+        margin-left: 2rem;
         font-size: $font-size-base;
         line-height: $input-line-height-base;
         display: block;

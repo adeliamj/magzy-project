@@ -7,7 +7,6 @@
     border-top: $border-color-light;
 
     @include respond(sm) {
-        margin-left: -3rem;
         margin-right: -2rem;
         padding-top: .5rem;
         font-size: $font-size-base;
