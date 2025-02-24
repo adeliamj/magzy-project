@@ -14,21 +14,11 @@
         display: flex;
     }
 
-    @include respond(md){
-        margin-right: -2rem;
-        display: flex;
-    }
-
     &__menu {
         list-style: none;
         display: flex;
         align-items: center;
         margin-bottom: 0;
-
-        @include respond(sm) {
-            display: flex;
-            flex-direction: column;
-        }
 
         @include respond(md) {
             display: flex;
@@ -42,11 +32,6 @@
 
             top: 50%;
 
-            @include respond(sm) {
-                display: none;
-                visibility: hidden;
-                opacity: 0;
-            }
 
             @include respond(md) {
                 display: none;
@@ -64,12 +49,6 @@
             &-slash {
                 padding-left: .3rem;
                 padding-right: .3rem;
-
-                @include respond(sm) {
-                    display: none;
-                    visibility: hidden;
-                    opacity: 0;
-                }
 
                 @include respond(md) {
                     display: none;
@@ -117,12 +96,6 @@
             height: 25px;
             margin-top: -.2rem;
 
-            @include respond(sm) {
-                display: none;
-                visibility: hidden;
-                opacity: 0;
-            }
-
             @include respond(md) {
                 display: none;
                 visibility: hidden;
@@ -151,15 +124,15 @@
         margin-bottom: 0;
         margin-right: 9rem;
 
-        @include respond(sm) {
+        @include respond(md) {
             padding-top: 1.5%;
-            margin-left: -5rem;
+            margin-left: 0rem;
             margin-right: 0rem;
         }
 
-        @include respond(md) {
-            padding-top: 1.5%;
-            margin-left: -25rem;
+        @include respond(sm) {
+            padding-top: 1.7%;
+            margin-left: -15%;
             margin-right: 0rem;
         }
     }
@@ -169,19 +142,15 @@
         visibility: hidden;
         opacity: 0;
 
-        @include respond(sm) {
-            margin: 1.2rem 0 -1.2rem -10rem;
+        @include respond(md) {
+            margin: 1.2rem 0 -1.2rem -40%;
             display: flex;
             visibility: visible;
             opacity: 1;
         }
 
-        
-        @include respond(md) {
-            margin: 1.2rem 0 -1.2rem -30rem;
-            display: flex;
-            visibility: visible;
-            opacity: 1;
+        @include respond(sm) {
+            margin: 1.2rem 0 -1.2rem -40%;
         }
     }
 }

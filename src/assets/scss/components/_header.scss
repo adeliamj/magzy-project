@@ -38,6 +38,11 @@
                 line-height: $input-line-height-h3;
                 padding-right: 0rem;
             }
+
+            @include respond(md) {
+                line-height: $input-line-height-h3;
+                padding-right: 1rem;
+            }
         }
 
         &--event {
