@@ -7,6 +7,20 @@
     outline: none;
     border: none;
 
+    @include respond(xl) {
+        margin-left: -30%;
+    }
+
+
+    @include respond(lg) {
+        margin-left: -25%;
+    }
+
+
+    @include respond(md) {
+        margin-left: -2%;
+    }
+
     @include respond(sm) {
         margin-left: -25%;
     }

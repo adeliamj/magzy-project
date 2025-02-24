@@ -39,9 +39,13 @@
 
         &-1 {
 
+            @include respond(xl) {
+                margin-left: 1rem;
+            }
+
             @include respond(sm) {
                 margin-right: 1rem;
-                margin-top: 1rem;
+
             }
 
         }

@@ -16,7 +16,7 @@
         display: flex;
         justify-content: space-between;
 
-        @include respond(sm) {
+        @include respond(lg) {
             display: flex;
             flex-direction: column;
             overflow: hidden;
@@ -32,10 +32,25 @@
             line-height: $input-line-height-tb2;
             letter-spacing: 1%;
 
+            @include respond(xl){
+                font-size: $font-size-tb2;
+                line-height: $input-line-height-tb3;
+            }
+
+            @include respond(lg) {
+                font-size: $font-size-tb1;
+                order: -2;
+            }
+
+
+            @include respond(md) {
+                font-size: $font-size-tb2;
+                line-height: $input-line-height-h1;
+            }
+
             @include respond(sm) {
                 font-size: $font-size-h2;
                 line-height: $input-line-height-h4;
-                order: -2;
             }
         }
 
@@ -58,12 +73,35 @@
                 border-bottom: $border-color-dark;
                 border-top: $border-color-dark;
 
+                @include respond(md) {
+                    width: 32rem;
+                    margin-left: 0%;
+                }
+
                 @include respond(sm) {
                     margin-left: 10%;
                 }
             }
 
+            @include respond(xl) {
+                margin-top: 3rem;
+                margin-left: -10rem;
+            }
+
+            @include respond(lg) {
+                margin-top: -20rem;
+                margin-left: 0rem;
+            }
+
+            @include respond(md) {
+                margin-top: -10rem;
+                font-size: $font-size-lg;
+                line-height: $input-line-height-lg;
+                margin-left: 0rem;
+            }
+
             @include respond(sm) {
+                margin-top: 0rem;
                 font-size: $font-size-lg;
                 line-height: $input-line-height-lg;
                 padding-top: 5%;
@@ -79,18 +117,42 @@
             overflow: hidden;
             margin-left: -45rem;
 
-            @include respond(sm) {
+            @include respond(xl) {
+                overflow: hidden;
+                margin-left: -20rem;
+            }
+
+            @include respond(lg) {
                 display: flex;
-                margin-top: -5rem;
-                margin-left: 3rem;
                 justify-content: end;
                 align-items: end;
                 overflow: hidden;
                 order: -1;
                 z-index: 0;
+                margin-top: -13.5rem;
+                margin-left: 15rem;
+            }
+
+
+            @include respond(md) {
+                display: flex;
+                margin-top: -10rem;
+                margin-left: 16rem;
+            }
+
+            @include respond(sm) {
+                display: flex;
+                margin-top: -5rem;
+                margin-left: 3rem;
             }
 
             .image__subs {
+
+                @include respond(lg) {
+                    width: 80%;
+                    overflow: hidden;
+                }
+
                 @include respond(sm) {
                     margin-top: .3rem;
                     width: 70%;
@@ -108,13 +170,26 @@
         margin-top: -11.1rem;
         margin-left: -2rem;
 
-        @include respond(sm) {
+        @include respond(xl) {
             width: 100%;
+            margin-left: -2rem;
+        }
+
+        @include respond(lg) {
+            margin-top: 0rem;
+            margin-left: -2rem;
+            display: flex;
+            border-bottom: none;
+        }
+
+        @include respond(md) {
+            margin-top: 0;
+        }
+
+        @include respond(sm) {
             margin-top: 10%;
             margin-right: -4rem;
             margin-left: -2rem;
-            display: inline-block;
-            border-bottom: none;
         }
 
         &--logo {
@@ -139,8 +214,22 @@
             padding-left: 10rem;
             display: flex;
 
-            @include respond(sm) {
+            @include respond(xl) {
+                margin-left: -5rem;
+            }
+
+            @include respond(lg) {
+                padding-top: 7%;
                 width: 100%;
+                padding-left: 10rem;
+            }
+
+            @include respond(md) {
+                padding-top: 5%;
+
+            }
+
+            @include respond(sm) {
                 margin-left: 2rem;
                 padding-top: 0%;
                 padding-left: 0rem;
