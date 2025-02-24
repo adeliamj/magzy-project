@@ -8,6 +8,7 @@
     text-transform: uppercase;
 
     @include respond(sm) {
+        margin-left: 1rem;
         font-size: $font-size-base;
         line-height: $input-line-height-base;
         display: block;
@@ -74,7 +75,6 @@
             display: flex;
             flex-direction: column;
             text-transform: none;
-            overflow: hidden;
         }
     }
 
@@ -88,7 +88,6 @@
         &--content {
             display: flex;
             flex-direction: column;
-            overflow: hidden;
         }
     }
 }
