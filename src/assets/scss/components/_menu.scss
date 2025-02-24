@@ -33,9 +33,15 @@
 
         &-1:hover,
         &-1:active,
-        .active {
+        .active, .menu--active{
             color: $color-brand-primary;
+
+            @include respond(sm) {
+                color: $color-brand-primary;
+            }
         }
+
+
 
     }
 }

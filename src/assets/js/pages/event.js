@@ -163,6 +163,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    // Mengambil elemen kelas menu
+    const menu = document.querySelector(".menu");
+    // Mengambil elemen dengan kelas .nav__hamburger
+    const menuButton = document.querySelector(".nav__hamburger");
+
+    // Memastikan menuButton dan menu ada di dalam elemen
+    if (menuButton && menu) {
+        // Menambahkan event listener untuk klik pada tombol menu 
+        menuButton.addEventListener("click", (event) => {
+            // Mencegah aksi default dari elemen
+            event.preventDefault();
+
+            // Toggle menjalankan kelas menu--active
+            menu.classList.toggle("menu--active");
+        });
+    }
+});
+
 
 
 
