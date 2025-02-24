@@ -5,16 +5,16 @@
     // border-bottom: $border-color-dark;
     align-items: center;
 
-    @include respond(sm) {
-        margin-left: 2rem;
+    @include respond(xl) {
         margin-right: 1rem;
+        margin-bottom: 2rem;
         display: inline-block;
-        
     }
 
-    @include respond(lg) {
+    @include respond(sm) {
+        margin-bottom: 0rem;
         margin-right: 1rem;
-        display: inline-block;
+        
     }
 
     &__title {
@@ -32,21 +32,29 @@
 
         &--all {
             font-weight: $font-weight-extralight;
-            padding-right: 0rem;
+            padding-right: 1rem;
 
-            @include respond(sm) {
-                line-height: $input-line-height-h3;
-                padding-right: 0rem;
+            @include respond(lg) {
+                line-height: $input-line-height-tb3;
             }
 
             @include respond(md) {
-                line-height: $input-line-height-h3;
-                padding-right: 1rem;
+                padding-right: 2rem;
+            }
+
+            @include respond(sm) {
+                line-height: $input-line-height-h2;
+                padding-right: 0rem;
             }
         }
 
         &--event {
             font-weight: $font-weight-thin;
+
+            @include respond(lg) {
+                line-height: $input-line-height-tb3;
+            }
+            
             @include respond(sm) {
                 line-height: $input-line-height-h1;
                 padding-right: 0rem;
@@ -62,6 +70,14 @@
         letter-spacing: 2%;
         font-weight: $font-weight-medium;
 
+        @include respond(xl) {
+            line-height: $input-line-height-base;
+            }
+
+        @include respond(md) {
+        font-size: $font-size-xl;
+        line-height: $input-line-height-xl;
+        }
 
         @include respond(sm) {
             font-size: $font-size-lg;
@@ -72,9 +88,6 @@
             padding-right: 0rem;
         }
 
-        @include respond(lg) {
-            margin-top: -3rem;
-            padding-bottom: 2rem;
-        }
+        
     }
 }
