@@ -38,6 +38,7 @@
 
             @include respond(sm) {
                 color: $color-brand-primary;
+                overflow: hidden;
             }
         }
 
