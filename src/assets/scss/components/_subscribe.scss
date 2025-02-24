@@ -1,12 +1,14 @@
 .subscribe {
     margin-left: 2rem;
     align-items: center;
-    margin-right: -1rem;
+    margin-right: -2rem;
 
     margin-top: 3.5rem;
+    overflow: hidden;
 
     @include respond(sm) {
-        margin-right: 0rem;
+        margin-right: -2rem;
+        overflow: hidden;
     }
 
     &__content {
@@ -16,6 +18,7 @@
         @include respond(sm) {
             display: flex;
             flex-direction: column;
+            overflow: hidden;
         }
 
         &--title {
@@ -53,6 +56,7 @@
                 border: none;
                 border-bottom: $border-color-dark;
                 border-top: $border-color-dark;
+
                 @include respond(sm) {
                     margin-left: 10%;
                 }
@@ -62,8 +66,8 @@
                 font-size: $font-size-lg;
                 line-height: $input-line-height-lg;
                 padding-top: 5%;
-                margin-left: 0rem;
-                width: 50%;
+                margin-left: -2rem;
+                width: 100%;
             }
         }
 
@@ -82,12 +86,14 @@
                 align-items: end;
                 overflow: hidden;
                 order: -1;
-                z-index: 2;
+                z-index: 0;
             }
 
             .image__subs {
                 @include respond(sm) {
+                    margin-top: .3rem;
                     width: 70%;
+                    overflow: hidden;
                 }
             }
         }

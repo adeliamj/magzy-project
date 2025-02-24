@@ -11,3 +11,27 @@
         margin-left: -25%;
     }
 }
+
+.nav-btn{
+    border: none;
+    border-radius: 0;
+
+    background-color: $color-icon-dark;
+    height: 1.7px;
+    width: 2rem;
+
+
+    &::before,
+    &::after {
+        background-color: $color-icon-dark;
+        height: 1.7px;
+        width: 2rem;
+        content: "";
+        display: block;
+        margin-left: -.3rem;
+    }
+
+    &::before { transform: translateY(-.6rem); }
+    &::after { transform: translateY(.5rem); }
+    
+}

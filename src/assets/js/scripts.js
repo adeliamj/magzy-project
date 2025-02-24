@@ -18,6 +18,7 @@ import "./icons/icon-carousel";
 import "./icons/icon-slider";
 import "./icons/icon-location";
 import "./icons/icon-arrow-right-top";
+import "./icons/icon-hamburger";
 import "./pages/event";
 
 $(document).ready(function () {
