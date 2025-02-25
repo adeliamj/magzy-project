@@ -55,9 +55,14 @@
             &-1 {
 
                 @include respond(sm) {
-                    padding-bottom: 1rem;
+                    font-size: $font-family-base;
+                    line-height: $input-line-height-base;
                 }
 
+            }
+
+            &-2{
+                margin-top: -1rem;
             }
 
             list-style: none;

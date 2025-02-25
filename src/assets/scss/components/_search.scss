@@ -6,6 +6,7 @@
     border-top: $border-color-dark;
     border-bottom: $border-color-dark;
     color: $color-gray;
+    height: 94px;
 
     @include respond(sm) {
         margin-left: 1rem;

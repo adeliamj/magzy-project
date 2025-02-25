@@ -1,10 +1,12 @@
 .copyright {
     margin-left: -2rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     list-style: none;
     margin-right: -2rem;
     border-top: $border-color-light;
+    height: 82px;
 
     @include respond(sm) {
         margin-right: -2rem;
@@ -13,6 +15,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        height: 102px;
     }
 
     &__left {
@@ -23,7 +26,7 @@
         }
 
         @include respond(sm) {
-            margin-right: 2rem;
+            margin-right: 1rem;
 
         }
     }
@@ -34,10 +37,11 @@
         font-weight: $font-weight-semibold;
 
         @include respond(sm){
-            margin-left: 4rem;
+            margin-left: -8rem;
         }
 
         &-1 {
+            margin-left: 2rem;
 
             @include respond(xl) {
                 margin-left: 1rem;

@@ -26,7 +26,7 @@
         display: flex;
 
         @include respond(sm) {
-            font-size: $font-size-tb3;
+            font-size: $font-size-tb2;
             display: inline-block;
         }
 
@@ -80,11 +80,11 @@
         }
 
         @include respond(sm) {
-            font-size: $font-size-lg;
+            font-size: toRem(102);
             padding-bottom: 3rem;
             text-transform: none;
             padding-top: 1rem;
-            line-height: $input-line-height-base;
+            line-height: toRem(102);
             padding-right: 0rem;
         }
 

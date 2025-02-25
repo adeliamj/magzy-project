@@ -4,12 +4,13 @@
     display: flex;
     justify-content: space-between;
     background-color: $color-background;
-    margin-bottom: 0;
     margin-right: -2rem;
+    height: 72px;
+    align-items: center;
 
     overflow: hidden;
 
-    @include respond(sm){
+    @include respond(sm) {
         margin-right: -2rem;
         display: flex;
     }
@@ -29,9 +30,7 @@
             font-size: $font-size-base;
             line-height: $input-line-height-sm;
             letter-spacing: 2%;
-
-            top: 50%;
-
+            cursor: pointer;
 
             @include respond(md) {
                 display: none;
@@ -57,6 +56,7 @@
                 }
             }
 
+
         }
 
         &--left:hover,
@@ -66,12 +66,13 @@
         }
 
         &--right {
+            cursor: pointer;
             padding-left: .6rem;
 
             &-subs {
                 font-family: $font-family-display;
                 color: $color-brand-primary;
-                font-size: $font-size-2xl;
+                font-size: toRem(40);
                 line-height: $input-line-height-2xl;
                 letter-spacing: 6%;
                 font-weight: bold;
@@ -90,11 +91,10 @@
         }
 
         &--icon {
-            fill: black;
-            color: black;
+            fill: $color-icon-dark;
+            color: $color-icon-dark;
             width: 25px;
             height: 25px;
-            margin-top: -.2rem;
 
             @include respond(md) {
                 display: none;
@@ -115,10 +115,9 @@
     }
 
     &__brand {
-        padding-top: 1%;
         font-family: $font-family-display;
         font-weight: $font-weight-base;
-        font-size: 2.5rem;
+        font-size: toRem(44.15);
         color: $color-brand-primary;
         padding-bottom: 0;
         margin-bottom: 0;
@@ -150,7 +149,7 @@
         }
 
         @include respond(sm) {
-            margin: 1.2rem 0 -1.2rem -40%;
+            margin: -.5rem -0 -1.2rem -40%;
         }
     }
 }
