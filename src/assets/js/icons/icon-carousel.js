@@ -9,11 +9,9 @@ class IconCarousel extends HTMLElement {
 
     render() {
         this.outerHTML = `
-      <svg class="icarousel" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="currentColor"/>
-<path d="M17.1714 16.0007L12.2217 11.0509L13.6359 9.63672L19.9999 16.0007L13.6359 22.3646L12.2217 20.9504L17.1714 16.0007Z" fill="currentColor"/>
+      <svg width="100%" height="100%" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.5 5.3577V6.8577H16.9425L4.5 19.3002L5.5575 20.3577L18 7.9152V17.3577H19.5V5.3577L7.5 5.3577Z" fill="currentColor"/>
 </svg>
-
         `;
     }
 }

@@ -2,19 +2,31 @@
     display: flex;
     justify-content: space-between;
     margin: 2rem 0 0 2rem;
-    // border-bottom: $border-color-dark;
     align-items: center;
+    overflow: hidden;
+
+    @include respond(1240px) {
+        padding-top: 2rem;
+        margin-bottom: 3rem;
+        display: inline-block;
+    }
 
     @include respond(xl) {
         margin-right: 1rem;
         margin-bottom: 2rem;
-        display: inline-block;
+    }
+
+    @include respond(lg) {
+        margin: 7rem 1rem 0 1rem;
+    }
+
+    @include respond(768px) {
+        margin: 7rem 1rem 0 0rem;
     }
 
     @include respond(sm) {
-        margin-bottom: 0rem;
-        margin-right: 1rem;
-        
+        margin: 5rem 1rem 0 1rem;
+
     }
 
     &__title {
@@ -24,38 +36,54 @@
         letter-spacing: 0%;
         text-transform: uppercase;
         display: flex;
+        overflow: hidden;
 
-        @include respond(sm) {
+
+        @include respond(480px) {
             font-size: $font-size-tb2;
             display: inline-block;
         }
 
         &--all {
+            overflow: hidden;
+
             font-weight: $font-weight-extralight;
             padding-right: 1rem;
 
             @include respond(lg) {
                 line-height: $input-line-height-tb3;
-            }
-
-            @include respond(md) {
                 padding-right: 2rem;
             }
 
-            @include respond(sm) {
-                line-height: $input-line-height-h2;
+            @include respond(576px) {
                 padding-right: 0rem;
+            }
+
+
+            @include respond(480px) {
+                line-height: $input-line-height-h2;
+
             }
         }
 
         &--event {
+            overflow: hidden;
             font-weight: $font-weight-thin;
+
+            span {
+                @include respond(576px) {
+                    display: none;
+                    visibility: hidden;
+                    opacity: 0;
+                }
+
+            }
 
             @include respond(lg) {
                 line-height: $input-line-height-tb3;
             }
-            
-            @include respond(sm) {
+
+            @include respond(480px) {
                 line-height: $input-line-height-h1;
                 padding-right: 0rem;
             }
@@ -63,6 +91,7 @@
     }
 
     &__content {
+        overflow: hidden;
         height: 100%;
         text-transform: uppercase;
         font-size: $font-size-h4;
@@ -72,22 +101,27 @@
 
         @include respond(xl) {
             line-height: $input-line-height-base;
-            }
-
-        @include respond(md) {
-        font-size: $font-size-xl;
-        line-height: $input-line-height-xl;
         }
 
-        @include respond(sm) {
-            font-size: toRem(102);
+        @include respond(lg) {
             padding-bottom: 3rem;
+        }
+
+        @include respond(768px) {
+            font-size: $font-size-xl;
+            line-height: $input-line-height-xl;
+        }
+
+        @include respond(576px) {
             text-transform: none;
+        }
+
+        @include respond(480px) {
+            font-size: toRem(24);
             padding-top: 1rem;
-            line-height: toRem(102);
             padding-right: 0rem;
         }
 
-        
+
     }
 }

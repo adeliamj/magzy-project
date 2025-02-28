@@ -2,7 +2,18 @@ body {
     background-color: $color-background;
     width: 98%;
 
-    @include respond(sm) {
+    @include respond(376px) {
         width: 100%;
+    }
+}
+
+.container {
+    max-width: 1440px;
+    padding-inline: 1rem;
+    margin-inline: auto;
+
+    @include respond(sm){
+        padding-inline: .1rem;
+        margin-inline: auto;
     }
 }

@@ -3,9 +3,10 @@
     visibility: hidden;
     opacity: 0;
 
+    position: absolute;
+    background-color: $color-background;
     margin-left: -2rem;
-    margin-right: -1rem;
-    margin-bottom: -7rem;
+    margin-right: -10rem;
     padding-top: 1rem;
     display: flex;
     justify-content: space-between;
@@ -13,10 +14,135 @@
     border-bottom: $border-color-dark;
     overflow: hidden;
 
-    @include respond(sm) {
+    z-index: 200;
+
+    &__main {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        margin-right: -100%;
+        margin-top: -1rem;
+        overflow: hidden;
+
+        &-1 {
+            height: 92px;
+            width: 720px;
+            font-size: toRem(40);
+            border-bottom: $border-color-light;
+            font-family: $font-family-display;
+            font-weight: $font-weight-light;
+            margin-left: -1rem;
+            cursor: pointer;
+            overflow: hidden;
+
+            @include respond(992px){
+                width: 993px;
+            }
+
+            @include respond(480px){
+                width: 481px;
+            }
+
+            @include respond(sm){
+                width: 376px;
+                overflow: hidden;
+            }
+
+            &-margin {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row;
+                top: 50%;
+                padding-right: 1rem;
+                align-items: center;
+                padding-left: 2rem;
+                overflow: hidden;
+
+            }
+        }
+
+        &-1:last-child {
+            border-bottom: none;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        &--icon {
+            fill: $color-icon-dark;
+            color: $color-icon-dark;
+            width: 30px;
+            height: 30px;
+            margin-top: 1rem;
+            padding-left: 1rem;
+            margin-left: 20%;
+            transform: rotate(180deg);
+            overflow: hidden;
+
+            @include respond(992px) {
+                margin-right: .5rem;
+                margin-top: 0rem;
+                width: 50px;
+                height: 50px;
+            }
+
+            @include respond(lg) {
+                margin-right: 5%;
+            }
+
+            @include respond(768px) {
+                margin-right: 24%;
+            }
+
+            @include respond(576px) {
+                margin-left: 0%;
+                margin-right: 44%;
+            }
+
+            @include respond(480px) {
+                margin-right: 3%;
+            }
+
+            @include respond(460px) {
+                margin-right: 10%;
+            }
+
+            @include respond(400px) {
+                margin-right: 20%;
+            }
+
+            @include respond(385px) {
+                margin-right: 23%;
+            }
+
+            @include respond(375px) {
+                overflow: hidden;
+                margin-right: 10%
+            }
+        }
+
+        &--icon:hover {
+            color: $color-brand-primary;
+            overflow: hidden;
+        }
+
+
+        @include respond(992px) {
+            display: flex;
+            flex-direction: column;
+            visibility: visible;
+            opacity: 1;
+            list-style: none;
+            margin-left: -2rem;
+            overflow: hidden;
+        }
+    }
+
+    @include respond(992px) {
         display: flex;
         margin-left: 0rem;
-        margin-right: -1rem;
+        margin-right: 0rem;
         overflow: hidden;
     }
 
@@ -24,25 +150,137 @@
         margin-left: 2rem;
         list-style: none;
         margin-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
 
-        @include respond(sm) {
-            margin-right: 1rem;
-            margin-left: 0rem;
+        @include respond(992px) {
+            margin-left: -1rem;
+            margin-right: 0rem;
+        }
+
+        &-1 {
+            margin-bottom: .5rem;
             overflow: hidden;
+
+            @include respond(992px) {
+                margin-bottom: .2rem;
+            }
         }
 
         &-1:hover,
         &-1:active,
-        .active, .menu--active{
+        .active,
+        .menu--active {
             color: $color-brand-primary;
+            overflow: hidden;
 
-            @include respond(sm) {
+            @include respond(992px) {
                 color: $color-brand-primary;
                 overflow: hidden;
             }
         }
 
+        &-2 {
+            display: flex;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 1rem;
+            overflow: hidden;
 
+            @include respond(992px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                padding-right: 5%;
+            }
+        }
+
+        &--left {
+            width: 206px;
+            overflow: hidden;
+
+            @include respond(992px) {
+                width: 366px;
+            }
+
+            @include respond(768px) {
+                width: 206px;
+            }
+
+            @include respond(576px) {
+                width: 186px;
+            }
+
+            @include respond(480px) {
+                width: 106px;
+            }
+        }
+
+        &--last {
+            overflow: hidden;
+            width: 226px;
+
+            @include respond(576px) {
+                width: 154px;
+            }
+
+            @include respond(480px) {
+                width: 124px;
+            }
+        }
+
+        &--right {
+            overflow: hidden;
+            width: 206px;
+
+            @include respond(992px) {
+                width: 454px;
+            }
+
+            @include respond(768px) {
+                width: 354px;
+            }
+
+            @include respond(576px) {
+                width: 300px;
+            }
+
+            @include respond(480px) {
+                width: 188px;
+            }
+        }
+
+        &-margin {
+            justify-content: space-between;
+            width: 90vw;
+            overflow: hidden;
+
+            @include respond(992px) {
+                font-size: $font-size-xl;
+                margin-top: 0;
+                overflow: hidden;
+            } 
+
+            @include respond(576px) {
+                font-size: $font-size-xl;
+                overflow: hidden;
+            }
+            
+            @include respond(480px){
+                width: 100vw;
+                font-size: $font-size-base;
+                line-height: $input-line-height-base;
+                margin-top: -8%;
+                overflow: hidden;
+            }
+
+            @include respond(sm){
+                justify-content: flex-start;
+                overflow: hidden;
+            }
+
+        }
 
     }
 }
@@ -51,12 +289,78 @@
     display: flex;
     visibility: visible;
     opacity: 1;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 0rem;
+    width: 100vw;
     overflow: hidden;
 
-    @include respond(sm) {
+    @include respond(992px) {
+        margin-left: -1rem;
+        padding-left: 1rem;
         display: inline-block;
         width: 100%;
         overflow: hidden;
+    }
+
+    @include respond(sm) {
+        margin-left: 0rem;
+        overflow: hidden;
+    }
+
+    &__main {
+        // display: none;
+        // visibility: hidden;
+        // opacity: 0;
+        margin-right: -100%;
+        overflow: hidden;
+
+        @include respond(992px) {
+            display: inline-block;
+            width: 100vh;
+            overflow: hidden;
+            margin-right: 0;
+            display: flex;
+            visibility: visible;
+            opacity: 1;
+            overflow: hidden;
+
+        }
+
+        &-1 {
+            &-all {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+.show__menu {
+    display: flex;
+    overflow: hidden;
+
+    @include respond(992px) {
+        font-size: $font-family-base;
+        display: flex;
+        flex-direction: column;
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    &.show__menu--active {
+        background-color: $color-background;
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        overflow: hidden;
+
+        @include respond(992px) {
+            display: flex;
+            visibility: visible;
+            opacity: 1;
+        }
     }
 }

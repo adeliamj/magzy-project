@@ -4,15 +4,22 @@
     display: flex;
     justify-content: space-between;
     background-color: $color-background;
-    margin-right: -2rem;
+    margin-left: -2rem;
+    margin-right: -3rem;
     height: 72px;
     align-items: center;
 
     overflow: hidden;
 
-    @include respond(sm) {
-        margin-right: -2rem;
+    @include respond(480px) {
+        margin-right: -1.5rem;
         display: flex;
+        justify-content: space-between;
+        height: 64px;
+    }
+
+    @include respond(sm) {
+        margin-right: 0rem;
     }
 
     &__menu {
@@ -20,8 +27,26 @@
         display: flex;
         align-items: center;
         margin-bottom: 0;
+        padding-left: 4rem;
 
-        @include respond(md) {
+        @include respond(768px) {
+            padding-left: 0rem;
+        }
+
+
+        &-1 {
+            display: flex;
+
+            @include respond(992px) {
+                display: none;
+                visibility: hidden;
+                opacity: 0;
+                margin-right: -100%;
+                position: absolute;
+            }
+        }
+
+        @include respond(768px) {
             display: flex;
             flex-direction: column;
         }
@@ -32,12 +57,12 @@
             letter-spacing: 2%;
             cursor: pointer;
 
-            @include respond(md) {
+            @include respond(768px) {
                 display: none;
                 visibility: hidden;
                 opacity: 0;
+                margin-right: -100%;
             }
-
 
             &-all {
                 align-items: center;
@@ -49,10 +74,11 @@
                 padding-left: .3rem;
                 padding-right: .3rem;
 
-                @include respond(md) {
+                @include respond(992px) {
                     display: none;
                     visibility: hidden;
                     opacity: 0;
+                    margin-left: -100%;
                 }
             }
 
@@ -68,6 +94,12 @@
         &--right {
             cursor: pointer;
             padding-left: .6rem;
+            margin-left: auto;
+
+            @include respond(sm) {
+                margin-left: auto;
+
+            }
 
             &-subs {
                 font-family: $font-family-display;
@@ -77,15 +109,37 @@
                 letter-spacing: 6%;
                 font-weight: bold;
                 padding-top: .6rem;
-                padding-right: 2rem;
+                padding-right: 3rem;
                 margin-bottom: 0;
 
-                @include respond(sm) {
-                    margin-right: 1rem;
+                @include respond(992px) {
+                    padding-left: 0rem;
+                    justify-content: flex-end;
+                    align-items: end;
+                    padding-right: 2rem;
                 }
 
-                @include respond(md) {
-                    margin-right: 1rem;
+                @include respond(768px) {
+                    padding-right: 2rem;
+                }
+
+                @include respond(576px) {
+                    font-size: toRem(32);
+                    line-height: toRem(32);
+
+                }
+
+                @include respond(480px) {
+                    padding-right: 1rem;
+
+                }
+
+                @include respond(sm) {
+                    font-size: toRem(28);
+                    line-height: toRem(28);
+                    justify-content: flex-end;
+                    align-items: end;
+
                 }
             }
         }
@@ -93,10 +147,11 @@
         &--icon {
             fill: $color-icon-dark;
             color: $color-icon-dark;
+            margin-top: -.5rem;
             width: 25px;
             height: 25px;
 
-            @include respond(md) {
+            @include respond(992px) {
                 display: none;
                 visibility: hidden;
                 opacity: 0;
@@ -123,15 +178,33 @@
         margin-bottom: 0;
         margin-right: 9rem;
 
-        @include respond(md) {
+        @include respond(768px) {
             padding-top: 1.5%;
             margin-left: 0rem;
             margin-right: 0rem;
+            order: -1;
         }
 
-        @include respond(sm) {
+        @include respond(576px) {
+            ont-size: toRem(36);
+            line-height: toRem(36);
             padding-top: 1.7%;
-            margin-left: -15%;
+            margin-left: -20%;
+        }
+
+        @include respond(480px) {
+            ont-size: toRem(36);
+            line-height: toRem(36);
+            padding-top: 1.7%;
+            margin-left: -10%;
+        }
+        
+
+        @include respond(sm) {
+            font-size: toRem(28);
+            line-height: toRem(28);
+            padding-top: 1.7%;
+            margin-left: -10%;
             margin-right: 0rem;
         }
     }
@@ -140,16 +213,22 @@
         display: none;
         visibility: hidden;
         opacity: 0;
+        cursor: pointer;
 
-        @include respond(md) {
-            margin: 1.2rem 0 -1.2rem -40%;
+        @include respond(992px) {
+            margin: -1rem 0 -1.2rem 1rem;
             display: flex;
             visibility: visible;
             opacity: 1;
+            order: -1;
         }
 
+        @include respond(768px) {
+            margin: -.3rem 0 -1.2rem 0rem;
+        }
+        
         @include respond(sm) {
-            margin: -.5rem -0 -1.2rem -40%;
+            margin: -.5rem -0 -1.2rem 1rem;
         }
     }
 }

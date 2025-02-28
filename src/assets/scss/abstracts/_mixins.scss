@@ -14,15 +14,44 @@
 }
 
 
-@mixin respond($breakpoint) {
-  $max-width-value: map-get($container-max-widths, $breakpoint);
+// @mixin respond($breakpoint) {
+//   $max-width-value: map-get($container-max-widths, $breakpoint);
 
-  @if $max-width-value {
-    @media only screen and (max-width: $max-width-value) {
+//   @if $max-width-value {
+//     @media only screen and (max-width: $max-width-value) {
+//       @content;
+//     }
+//   }
+
+//   @else if type-of($value) == number {
+//     @media only screen and (max-width: $value) {
+//       @content;
+//     }
+//   } 
+// }
+
+@mixin respond($value) {
+  // Cek apakah nilai ada di $container-max-widths
+  $max-width: map-get($container-max-widths, $value);
+
+  // Jika nilai ditemukan di $container-max-widths, gunakan itu
+  @if $max-width {
+    @media only screen and (max-width: $max-width) {
       @content;
     }
+  } 
+  // Jika nilai adalah angka langsung, gunakan langsung sebagai max-width
+  @else if type-of($value) == number {
+    @media only screen and (max-width: $value) {
+      @content;
+    }
+  } 
+  // Jika tidak ditemukan di keduanya, beri peringatan
+  @else {
+    @warn "Max-width value `#{$value}` not found in container-max-widths.";
   }
 }
+
 
 // Keyframe animations with prefixes
 // So you don't need to add multeple keyframes manually

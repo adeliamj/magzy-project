@@ -6,45 +6,42 @@
     background-color: $color-brand-primary;
     outline: none;
     border: none;
+    margin-left: -2%;
+
+    @include respond(1440px) {
+        margin-left: -3%;
+    }
+
+    @include respond(1340px) {
+        margin-left: -3%;
+    }
+
+    @include respond(1240px) {
+        margin-left: -4%;
+    }
+
+    @include respond(992px) {
+        margin-left: 1%;
+    }
 
     @include respond(xl) {
-        margin-left: -30%;
+        margin-left: -11%;
     }
-
 
     @include respond(lg) {
-        margin-left: -25%;
+        margin-left: -8%;
     }
 
-
-    @include respond(md) {
+    @include respond(768px) {
         margin-left: -2%;
     }
+
+    @include respond(400px) {
+        margin-left: -8%;
+    }
+
 
     @include respond(sm) {
         margin-left: -25%;
     }
 }
-
-// .nav-btn{
-//     border: none;
-//     border-radius: 0;
-
-//     background-color: $color-icon-dark;
-//     height: 1.7px;
-//     width: 2rem;
-
-
-//     &::before,
-//     &::after {
-//         background-color: $color-icon-dark;
-//         height: 1.7px;
-//         width: 2rem;
-//         content: "";
-//         display: block;
-//     }
-
-//     &::before { transform: translateY(-.6rem); }
-//     &::after { transform: translateY(.5rem); }
-    
-// }

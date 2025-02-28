@@ -164,6 +164,40 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+    // Mengambil elemen menu untuk all-menu2
+    const menu2 = document.querySelector(".show__menu");
+    // Mengambil elemen dengan id #all-menu2
+    const menuButton2 = document.querySelector("#all-menu2");
+
+    // Memastikan menuButton2 dan menu2 ada di elemen
+    if (menuButton2 && menu2) {
+        // Menambahkan event listener untuk klik pada tombol menu #2
+        menuButton2.addEventListener("click", (event) => {
+            // Mencegah aksi default dari elemen
+            event.preventDefault();
+
+            // Toggle menjalankan kelas menu--active untuk all-menu2
+            menu2.classList.toggle("menu--active");
+        });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Untuk all-menu2
+    const menu2 = document.querySelector(".show__menu");
+    const menuButton2 = document.querySelector("#all-menu2");
+
+    if (menuButton2 && menu2) {
+        menuButton2.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            // Toggle class yang sama untuk menu kedua
+            menu2.classList.toggle("show__menu--active");
+        });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
     // Mengambil elemen kelas menu
     const menu = document.querySelector(".menu");
     // Mengambil elemen dengan kelas .nav__hamburger
