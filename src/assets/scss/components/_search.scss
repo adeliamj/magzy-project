@@ -24,10 +24,9 @@
         
     }
 
-    @include respond(sm) {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-bottom: 0rem;
+    @include respond(376px) {
+        margin-right: -.5rem;
+        height: 72px;
         
     }
 

@@ -37,7 +37,7 @@
 
     @include respond(sm) {
         font-size: $font-size-base;
-        margin-right: 0rem;
+        margin-right: 0;
     }
 
     &__left {
@@ -55,7 +55,7 @@
         }
 
         @include respond(768px) {
-            margin-left: 0rem;
+            margin-left: 0;
         }
 
 
