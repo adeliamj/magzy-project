@@ -265,7 +265,7 @@
                 width: 110%;
             }
 
-            @include respond(376px) {
+            @include respond(sm) {
                 width: 80%;
             }
 
