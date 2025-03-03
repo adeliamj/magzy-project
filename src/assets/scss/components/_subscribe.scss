@@ -37,6 +37,7 @@
 
         @include respond(376px) {
         margin-left: 1rem;
+        margin-right: -1rem;
         overflow: hidden;
         }
 
@@ -218,7 +219,7 @@
             }
 
             @include respond(376px) {
-                padding-right: 0rem;
+                padding-right: 1rem;
             }
         }
 
@@ -296,8 +297,11 @@
             }
 
             @include respond(376px) {
-                margin-top: -6.5rem;
-                margin-left: 15rem;
+                width: 100%;
+                margin-left: 0rem;
+                padding-left: 1rem;
+                margin-right: -1rem;
+                margin-top: -6rem;
             }
 
             .image__subs {
@@ -351,7 +355,7 @@
                 }
 
                 @include respond(376px) {
-                    width: 100%;
+                    width: 55%;
                 }
             }
         }

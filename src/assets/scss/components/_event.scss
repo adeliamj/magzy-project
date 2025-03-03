@@ -16,17 +16,15 @@
         margin-left: 0rem;
     }
 
-    @include respond(sm) {
-        margin-left: 1rem;
+    @include respond(376px) {
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 
     &__title {
         overflow: hidden;
         border-bottom: $border-color-dark-thick;
 
-        @include respond(sm) {
-            margin-top: 2rem;
-        }
 
         &--box {
             background-color: $color-background-dark;
@@ -41,7 +39,7 @@
             justify-content: center;
             align-items: center;
 
-            @include respond(sm) {
+            @include respond(376px) {
                 font-size: $font-size-base;
                 width: 136px;
                 height: 42px;
@@ -97,7 +95,7 @@
                     margin-left: 0rem;
                 }
 
-                @include respond(sm) {
+                @include respond(376px) {
                     font-size: $font-size-base;
                     line-height: $input-line-height-base;
                 }
@@ -117,11 +115,11 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
 
-                    @include respond(sm) {
+                    @include respond(376px) {
                         font-size: toRem(36);
                     }
 
-                    @include respond(sm) {
+                    @include respond(376px) {
                         line-height: $input-line-height-2xl;
                     }
 
@@ -182,8 +180,8 @@
                 width: 20%;
             }
 
-            @include respond(sm) {
-                margin-left: 0rem;
+            @include respond(376px) {
+                margin-left: -1rem;
             }
 
 
@@ -198,7 +196,7 @@
                     padding-left: 1rem;
                 }
 
-                @include respond(sm) {
+                @include respond(376px) {
                     padding-left: 1.7rem;
                     font-size: $font-size-base;
                     line-height: $input-line-height-base;
@@ -216,7 +214,7 @@
                     margin-top: -2rem;
                 }
 
-                @include respond(sm) {
+                @include respond(376px) {
                     margin-top: 0;
                     margin-left: 2rem;
                     font-size: toRem(48);
@@ -267,7 +265,7 @@
                 width: 110%;
             }
 
-            @include respond(sm) {
+            @include respond(376px) {
                 width: 80%;
             }
 
@@ -355,7 +353,7 @@
                 margin-top: -2rem;
             }
 
-            @include respond(sm) {
+            @include respond(376px) {
                 margin-top: 0rem;
                 font-size: $font-size-base;
             }
@@ -423,8 +421,6 @@
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
-
-                @include respond(sm) {}
             }
 
             &-tag {
@@ -444,7 +440,7 @@
                     margin-top: 1rem;
                 }
 
-                @include respond(sm) {
+                @include respond(376px) {
                     margin-top: -.1rem;
                 }
 
@@ -476,7 +472,7 @@
                         margin-top: 1rem;
                     }
 
-                    @include respond(sm) {
+                    @include respond(376px) {
                         padding-right: .5rem;
                         padding-left: .5rem;
                         margin-top: 1rem;
@@ -685,7 +681,7 @@
             height: 3px;
         }
 
-        @include respond(sm) {
+        @include respond(376px) {
             width: 100%;
         }
     }
