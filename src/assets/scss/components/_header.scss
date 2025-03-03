@@ -84,8 +84,8 @@
             }
 
             @include respond(480px) {
-                line-height: $input-line-height-h1;
-                padding-right: 0rem;
+                line-height: 11rem;
+                padding-right: 2rem;
             }
         }
     }
