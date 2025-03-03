@@ -71,7 +71,7 @@
         }
 
         &--text {
-         overflow: hidden;
+            overflow: hidden;
             order: -1;
             width: 10%;
 
@@ -256,7 +256,7 @@
             }
 
             @include respond(480px) {
-                width: 120%;
+                width: 110%;
             }
 
             @include respond(460px) {
@@ -540,8 +540,132 @@
 }
 
 .icon {
-
     width: 100%;
+
+    &__carousel {
+
+        &--content {
+            width: 32px;
+            height: 32px;
+            color: $color-text-white;
+
+            @include respond(768px) {
+                width: 50px;
+                height: 50px;
+            }
+
+            @include respond(576px) {
+                width: 42px;
+                height: 42px;
+            }
+
+            @include respond(460px) {
+                width: 40px;
+                height: 40px;
+            }
+
+            @include respond(376px) {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    
+        cursor: pointer;
+        align-content: center;
+        justify-content: center;
+    
+        z-index: 100;
+    
+        @include respond(xxl) {
+            margin-left: -1%;
+        }
+    
+        @include respond(1200px) {
+            margin-left: -1%;
+        }
+    
+        @include respond(xl) {
+            margin-left: -1%;
+        }
+    
+        @include respond(992px) {
+            margin-left: -.5%;
+        }
+    
+        @include respond(lg) {
+            margin-left: -1%;
+        }
+    
+        @include respond(768px) {
+            margin-left: 1%;
+        }
+    
+        @include respond(576px) {
+            margin-left: 0;
+        }
+    
+        @include respond(480px) {
+            margin-left: -.5%;
+        }
+    
+        @include respond(460px) {
+            margin-left: -.5%;
+        }
+    
+        @include respond(400px) {
+            margin-left: -1%;
+        }
+    
+        @include respond(376px) {
+            margin-left: -1%;
+        }
+    
+        &--right {
+            transform: scaleX(-1);
+            margin-left: 0rem;
+    
+            @include respond(xxl) {
+                margin-left: -1%;
+            }
+
+            @include respond(1200px) {
+                margin-left: -1%;
+            }
+    
+            @include respond(xl) {
+                margin-left: -1%;
+            }
+
+            @include respond(992px) {
+                margin-left: -.5%;
+            }
+    
+            @include respond(lg) {
+                margin-left: -1%;
+            }
+    
+            @include respond(768px) {
+                margin-left: 1%;
+            }
+    
+            @include respond(576px) {
+                margin-left: 0;
+            }
+    
+            @include respond(460px) {
+                margin-left: -.5%;
+            }
+    
+            @include respond(400px) {
+                margin-left: -1%;
+            }
+        
+            @include respond(376px) {
+                margin-left: -1%;
+            }
+        }
+    
+    }
 
     &__slider {
         width: 780px;
@@ -596,107 +720,4 @@
             width: 100%;
         }
     }
-}
-
-.icon__carousel, #next {
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    padding-top: 7rem;
-    align-content: center;
-    justify-content: center;
-    color: $color-text-white;
-    stroke: $color-text-white;
-    
-    z-index: 100;
-
-    @include respond(xxl) {
-        margin-top: -1rem;
-        margin-left: -1%;
-    }
-
-    @include respond(1200px) {
-        margin-top: -2rem;
-        margin-left: -1%;
-    }
-
-    @include respond(xl) {
-        margin-top: -2rem;
-        margin-left: -1.5%;
-    }
-
-    @include respond(992px) {
-        margin-top: -1rem;
-        margin-left: -.5%;
-    }
-
-    @include respond(lg) {
-        margin-top: -2rem;
-        margin-left: -1%;
-    }
-
-    @include respond(768px) {
-        margin-top: 7rem;
-        margin-left: 1rem;
-    }
-
-    @include respond(576px) {
-        margin-top: 4rem;
-        margin-left: 0rem;
-    }
-
-    @include respond(480px) {
-        margin-top: 1rem;
-        margin-left: 0rem;
-    }
-
-    @include respond(460px) {
-        margin-top: 0rem;
-    }
-
-    @include respond(400px) {
-        margin-top: -1rem;
-    }
-
-    @include respond(376px) {
-        margin-top: -1.2rem;
-    }
-
-    &--right {
-        transform: scaleX(-1);
-        margin-left: 0rem;
-
-        @include respond(xxl) {
-            margin-left: -.2rem;
-        }
-
-        @include respond(xl) {
-            margin-left: -.2rem;
-        }
-
-        @include respond(lg) {
-            margin-left: -1%;
-        }
-
-        @include respond(768px) {
-            margin-left: 1rem;
-        }
-
-        @include respond(576px) {
-            margin-left: 0rem;
-        }
-
-        @include respond(460px) {
-            margin-top: 0rem;
-        }
-
-        @include respond(400px) {
-            margin-top: -1rem;
-        }
-
-        @include respond(376px) {
-            margin-top: -1.2rem;
-        }
-    }
-
 }
