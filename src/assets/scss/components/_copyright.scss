@@ -83,6 +83,10 @@
                 margin-left: 1rem;
             }
 
+            @include respond(376px){
+                margin-right: 1.2rem;
+            }
+
 
             @include respond(sm) {
                 margin-left: 2rem;
