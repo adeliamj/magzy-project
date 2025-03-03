@@ -13,12 +13,12 @@
 
 
     @include respond(768px) {
-        margin-left: 0rem;
+        margin-left: 0;
     }
 
     @include respond(376px) {
-        margin-left: 0rem;
-        margin-right: 0rem;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     &__title {
@@ -63,7 +63,7 @@
 
 
         @include respond(768px) {
-            margin-left: 0rem;
+            margin-left: 0;
             display: flex;
             flex-direction: column;
         }
@@ -92,7 +92,7 @@
                 }
 
                 @include respond(576px) {
-                    margin-left: 0rem;
+                    margin-left: 0;
                 }
 
                 @include respond(376px) {
@@ -240,8 +240,8 @@
             }
 
             @include respond(768px) {
-                margin-right: 0rem;
-                margin-left: 0rem;
+                margin-right: 0;
+                margin-left: 0;
                 width: 120%;
             }
 
@@ -349,12 +349,12 @@
 
             @include respond(768px) {
                 width: 100%;
-                margin-left: 0rem;
+                margin-left: 0;
                 margin-top: -2rem;
             }
 
             @include respond(376px) {
-                margin-top: 0rem;
+                margin-top: 0;
                 font-size: $font-size-base;
             }
 
@@ -587,7 +587,7 @@
     
         &--right {
             transform: scaleX(-1);
-            margin-left: 0rem;
+            margin-left: 0;
     
             @include respond(xxl) {
                 margin-left: -1%;
