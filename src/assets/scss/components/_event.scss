@@ -314,22 +314,6 @@
                     width: 80%;
                     padding-right: .5rem;
 
-                    // @include respond(768px) {
-                    //     width: 100%;
-                    // }
-
-                    // @include respond(md) {
-                    //     width: 100%;
-                    // }
-
-                    // @include respond(480px) {
-                    //     width: 100%;
-                    // }
-
-                    // @include respond(sm) {
-                    //     width: 100%;
-                    // }
-
                 }
 
                 &-2 {
@@ -341,22 +325,6 @@
                     margin-right: -78%;
                     overflow: hidden;
 
-                    // @include respond(768px) {
-                    //     clip-path: inset(0 75% 0 0);
-                    //     width: 100%;
-                    // }
-
-                    // @include respond(md) {
-                    //     width: 100%;
-                    // }
-
-                    // @include respond(480px) {
-                    //     width: 100%;
-                    // }
-
-                    // @include respond(sm) {
-                    //     width: 100%;
-                    // }
                 }
 
                 .carousel__image {
@@ -543,6 +511,7 @@
     width: 100%;
 
     &__carousel {
+        overflow: hidden;
 
         &--content {
             width: 32px;

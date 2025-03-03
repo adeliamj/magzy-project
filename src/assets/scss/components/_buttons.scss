@@ -41,7 +41,7 @@
     }
 
 
-    @include respond(sm) {
-        margin-left: -25%;
+    @include respond(376px) {
+        margin-left: -30%;
     }
 }
